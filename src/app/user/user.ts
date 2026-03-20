@@ -19,7 +19,9 @@ export class User {
   }
 
   onSelectUser(){
-    console.log('Clicked!!');
-    
+    //Managing Data
+    const randomIndex=Math.floor(Math.random()*DUMMY_USERS.length)
+    this.selected_users=DUMMY_USERS[randomIndex]
+
   }
 }
