@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, output, Output } from '@angular/core';
+import { Users } from './user.model';
 
 // type Users = {
 //   id: string,
@@ -6,11 +7,6 @@ import { Component, EventEmitter, Input, output, Output } from '@angular/core';
 //   avatar: string
 // }
 
-interface Users {
-  id: string,
-  name: string,
-  avatar: string
-}
 
 
 @Component({
