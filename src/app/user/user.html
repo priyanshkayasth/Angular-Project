@@ -1,6 +1,6 @@
-<div>
+<app-card>
     <!-- Listing to event event binding -->
-    <button (click)="onSelectUser()">
+    <button [class.active]="selected" (click)="onSelectUser()">
         <!-- <img [src]="'assets/user/' + selected_users.avatar" -->
 
         <!-- take value from getter -->
@@ -10,4 +10,4 @@
         <span>{{user.name}}</span>
 
     </button>
-</div>
+</app-card>

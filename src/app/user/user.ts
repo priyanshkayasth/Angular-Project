@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, output, Output } from '@angular/core';
 import { Users } from './user.model';
+import { Card } from '../shared/card/card';
 
 // type Users = {
 //   id: string,
@@ -12,7 +13,7 @@ import { Users } from './user.model';
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [Card],
   templateUrl: './user.html',
   styleUrl: './user.css',
 })
@@ -23,6 +24,7 @@ export class User {
   // @Input({required:true}) name!:string
 
   @Input({ required: true }) user!: Users
+  @Input({ required: true }) selected!: boolean
   @Output() select = new EventEmitter<string>()
   // select=output<string>()
 
